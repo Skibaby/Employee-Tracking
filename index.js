@@ -14,6 +14,7 @@ const getAll = (tableName) => {
         }
 
         console.table(results); // ADDED THIS LINE
+        // console.log(results)
         init();
     });
 };
@@ -93,6 +94,7 @@ const updateEmployeeRoleQuestions = async () => {
 const handleAction = ({ action }) => {
 
     console.log(`ACTION ${action}`);
+    
     switch (action) {
         case 'View employees': {
             getAll('employee');
@@ -204,8 +206,8 @@ const init = () => {
 };
 
 db = mysql.createConnection({
-    host: 'localhost',
+    host: '127.0.0.1',
     user: 'root',
-    password: 'root',
+    password: "",
     database: 'employee_db_2',
 }, init());

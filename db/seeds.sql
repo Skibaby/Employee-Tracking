@@ -2,45 +2,45 @@ USE employee_db_2;
 
 -- Preform INSERTS one table at a time
 
-INSERT INTO department (`name`) VALUES
-  ('Software Development'),
-  ('Quality Assurance'),
-  ('Product Management');
+-- INSERT INTO department (`name`) VALUES
+--   ('Software Development'),
+--   ('Quality Assurance'),
+--   ('Product Management');
 
 
-INSERT INTO `role` (title, salary, department_id) VALUES
-  ('Software Engineer', 6000.00, 1),
-  ('UI/UX Designer', 5000.00, 1),
-  ('QA Engineer', 4500.00, 2),
-  ('Product Manager', 7000.00, 3),
-  ('Technical Lead', 8000.00, 1),
-  ('Database Administrator', 5500.00, 1);
+-- INSERT INTO `role` (title, salary, department_id) VALUES
+--   ('Software Engineer', 6000.00, 1),
+--   ('UI/UX Designer', 5000.00, 1),
+--   ('QA Engineer', 4500.00, 2),
+--   ('Product Manager', 7000.00, 3),
+--   ('Technical Lead', 8000.00, 1),
+--   ('Database Administrator', 5500.00, 1);
 
 
-Need to wait for insert of role before inserting employee
-Check the role id that you need to insert
+-- Need to wait for insert of role before inserting employee
+-- Check the role id that you need to insert
 
-INSERT INTO employee (first_name, last_name, role_id) VALUES
-  ('Mary', 'Doe', 8),
-  ('Jane', 'Hope', 9),
-  ('Michael', 'Johnson', 10),
-  ('Emily', 'Wynn',11),
-  ('Larry', 'Brown', 12),
-  ('Sarah', 'Jones', 11),
-  ('Bob', 'Taylor', 7),
-  ('Olivia', 'Miller', 9),
-  ('Nancy', 'Wilson', 8),
-  ('Sophia', 'Anderson', 11);
+-- INSERT INTO employee (first_name, last_name, role_id) VALUES
+--   ('Mary', 'Doe', 1),
+--   ('Jane', 'Hope', 5),
+--   ('Michael', 'Johnson', 3),
+--   ('Emily', 'Wynn',2),
+--   ('Larry', 'Brown', 1),
+--   ('Sarah', 'Jones', 6),
+--   ('Bob', 'Taylor', 3),
+--   ('Olivia', 'Miller', 2),
+--   ('Nancy', 'Wilson', 5),
+--   ('Sophia', 'Anderson', 4);
 
 
-Need to wait for insert of employee before inserting manager_id
-Check the employee id that you need to insert
+-- Need to wait for insert of employee before inserting manager_id
+-- Check the employee id that you need to insert
 
-UPDATE employee SET manager_id = 21 WHERE id = 22;
-UPDATE employee SET manager_id = 21 WHERE id = 24;
-UPDATE employee SET manager_id = 26 WHERE id = 29;
-UPDATE employee SET manager_id = 29 WHERE id = 23;
-UPDATE employee SET manager_id = 29 WHERE id = 27;
+UPDATE employee SET manager_id = 2 WHERE id = 1;
+UPDATE employee SET manager_id = 6 WHERE id = 5;
+UPDATE employee SET manager_id = 2 WHERE id = 4;
+UPDATE employee SET manager_id = 7 WHERE id = 8;
+UPDATE employee SET manager_id = 6 WHERE id = 10;
 
 
 
