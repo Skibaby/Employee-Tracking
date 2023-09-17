@@ -1,22 +1,18 @@
 # Employee-Tracking
 
-GIVEN a command-line application that accepts user input
-WHEN I start the application
-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-WHEN I choose to view all departments
-THEN I am presented with a formatted table showing department names and department ids
-WHEN I choose to view all roles
-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
-WHEN I choose to view all employees
-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
-WHEN I choose to add a department
-THEN I am prompted to enter the name of the department and that department is added to the database
-WHEN I choose to add a role
-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-WHEN I choose to add an employee
-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database
+The objective of this assigned project is to create a useful workplace management system that operates through the CLI (Command Line Interface). This was achieved using Javascript, Inquirer, Node.js, MySQL and MySQL2 npm packages. This command-line application allows users to view and manipulate information concerning employees, roles, and departments for a company through the Command Line.
+
+## Video Walk-Through
 
 
 
+https://www.awesomescreenshot.com/video/20841821?key=ff42f60a5db59d0c445f71298a6eab0f
+
+
+
+## Usage
+
+- Start the application by typing "node index.js" into the command line at the project's root directory.
+- Carefully read through all the options and make your choice whether it be viewing the options, adding to the information already added or updating employee info.
+- Once you make your choice, answer all the questions given to you.
+- The questions are answered and that means your results are now available in the command line (table format).
